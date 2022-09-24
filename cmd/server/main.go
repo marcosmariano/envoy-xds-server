@@ -18,12 +18,13 @@ import (
 	"context"
 	"flag"
 
+	"envoy-xds-server/internal/processor"
+	"envoy-xds-server/internal/server"
+	"envoy-xds-server/internal/watcher"
+
 	"github.com/envoyproxy/go-control-plane/pkg/cache/v3"
 	serverv3 "github.com/envoyproxy/go-control-plane/pkg/server/v3"
 	log "github.com/sirupsen/logrus"
-	"github.com/stevesloka/envoy-xds-server/internal/processor"
-	"github.com/stevesloka/envoy-xds-server/internal/server"
-	"github.com/stevesloka/envoy-xds-server/internal/watcher"
 )
 
 var (

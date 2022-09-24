@@ -20,15 +20,16 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/stevesloka/envoy-xds-server/internal/resources"
+	"envoy-xds-server/internal/resources"
 
 	"github.com/envoyproxy/go-control-plane/pkg/cache/types"
 
-	"github.com/stevesloka/envoy-xds-server/internal/xdscache"
+	"envoy-xds-server/internal/xdscache"
+
+	"envoy-xds-server/internal/watcher"
 
 	"github.com/envoyproxy/go-control-plane/pkg/cache/v3"
 	"github.com/sirupsen/logrus"
-	"github.com/stevesloka/envoy-xds-server/internal/watcher"
 )
 
 type Processor struct {

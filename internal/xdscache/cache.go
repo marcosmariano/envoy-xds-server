@@ -15,8 +15,9 @@
 package xdscache
 
 import (
+	"envoy-xds-server/internal/resources"
+
 	"github.com/envoyproxy/go-control-plane/pkg/cache/types"
-	"github.com/stevesloka/envoy-xds-server/internal/resources"
 )
 
 type XDSCache struct {
